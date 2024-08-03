@@ -147,7 +147,7 @@
                         className: "nav-bar"
                     }, /*#__PURE__*/_react.default.createElement("div", {
                         className: "container"
-                    }, "by albaofspain")), /*#__PURE__*/_react.default.createElement("div", {
+                    }, "by albaofespana")), /*#__PURE__*/_react.default.createElement("div", {
                         className: "examples"
                     }, /*#__PURE__*/_react.default.createElement("div", {
                         className: "basic"
