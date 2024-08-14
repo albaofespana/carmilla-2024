@@ -9,7 +9,11 @@ class ProxyDTO:
         self.port = port
 
 
-# TODO: builder pattern refactoring
+"""
+: raise InvalidProxyException: if the proxy is invalid
+"""
+
+
 class ProxyDTOBuilder:
     @staticmethod
     def build(data: dict) -> ProxyDTO:
@@ -18,6 +22,10 @@ class ProxyDTOBuilder:
         password = data[const.FIELD_PASSWORD]
         proxy_address = data[const.FIELD_PROXY_ADDRESS]
         port = data[const.FIELD_PORT]
+        is_valid = data[const.FIELD_VALID]
+
+        if not is_valid:
+            raise InvalidProxyException(f"Invalid proxy: {user_name}@{proxy_address}:{port}")
 
         return ProxyDTO(
             user_name,
@@ -25,3 +33,8 @@ class ProxyDTOBuilder:
             proxy_address,
             port
         )
+
+
+class InvalidProxyException(Exception):
+    def __init__(self, message):
+        super().__init__(message)

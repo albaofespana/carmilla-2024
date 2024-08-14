@@ -1,7 +1,7 @@
 import requests
 
 from backend.const import proxy as const
-from backend.dto.proxy import ProxyDTO, ProxyDTOBuilder
+from backend.dto.proxy import ProxyDTO, ProxyDTOBuilder, InvalidProxyException
 
 
 def fetch_proxy_from_webshare() -> list[ProxyDTO]:
@@ -31,6 +31,9 @@ def _parse_proxy(api_response: requests.Response) -> list[ProxyDTO]:
     proxies = []
 
     for raw_proxy in raw_proxies:
-        proxies.append(ProxyDTOBuilder.build(raw_proxy))
+        try:
+            proxies.append(ProxyDTOBuilder.build(raw_proxy))
+        except InvalidProxyException:
+            pass
 
     return proxies
