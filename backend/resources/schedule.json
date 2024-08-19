@@ -34,6 +34,14 @@
         },
         {
             "playDate": "08/23(금)",
+            "playTime": "16:00",
+            "carmilla": "전민지",
+            "laura": "박새힘",
+            "nick": "김서연",
+            "spielsdorf": "반정모"
+        },
+        {
+            "playDate": "08/23(금)",
             "playTime": "20:00",
             "carmilla": "정예인",
             "laura": "박새힘",
@@ -106,6 +114,14 @@
         },
         {
             "playDate": "08/30(금)",
+            "playTime": "16:00",
+            "carmilla": "유주혜",
+            "laura": "이서영",
+            "nick": "김서연",
+            "spielsdorf": "반정모"
+        },
+        {
+            "playDate": "08/30(금)",
             "playTime": "20:00",
             "carmilla": "유주혜",
             "laura": "이서영",
@@ -175,6 +191,14 @@
             "laura": "박새힘",
             "nick": "송영미",
             "spielsdorf": "반정모"
+        },
+        {
+            "playDate": "09/06(금)",
+            "playTime": "16:00",
+            "carmilla": "전민지",
+            "laura": "이서영",
+            "nick": "민도희",
+            "spielsdorf": "한상훈"
         },
         {
             "playDate": "09/06(금)",
